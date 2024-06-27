@@ -1,0 +1,4 @@
+_sourceCategory=prod/apps/logs
+
+| json "response_time", "endpoint"
+| where endpoint = "api/data" and response_time > 3000
